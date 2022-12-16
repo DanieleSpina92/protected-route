@@ -6,7 +6,7 @@ const Navbar = ({ isLoggedUser }) => {
   const dispatch = useDispatch();
 
   return (
-  isLoggedUser && <nav style={{ textAlign: "center", marginTop: "20px" }}>
+    isLoggedUser && <nav style={{ textAlign: "center", marginTop: "20px" }}>
       <Link to="/home" style={{ padding: "10px" }}>
         Home
       </Link>
@@ -19,11 +19,7 @@ const Navbar = ({ isLoggedUser }) => {
       <Link to="/admin" style={{ padding: "10px" }}>
         Admin
       </Link>
-      <Link onClick={() => {
-            dispatch({
-              type: "LOGOUT",
-            });
-          }} to="/" style={{ padding: "10px" }}>
+      <Link onClick={() => {dispatch({type: "LOGOUT"})}} to="/" style={{ padding: "10px" }}>
         Logout
       </Link>
       </nav>

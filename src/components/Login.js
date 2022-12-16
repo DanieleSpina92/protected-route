@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Box from "@mui/material/Box";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import { Button } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
-import Logincss from "./Login.css";
+
 const Login = () => {
   const [username, setUsername] = useState("");
   const [psw, setPsw] = useState("");
@@ -60,7 +51,6 @@ const Login = () => {
               value={psw}
               onChange={(e) => setPsw(e.target.value)}
             />
-
             <div class="cut"></div>
             <label for="password" class="placeholder">
               Password

@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import Protected from "./components/Protected";
 import Login from "./components/Login";
 import { useSelector } from "react-redux";
-import Logout from "./components/Logout";
 import MyTask from "./components/Mytask";
 import Setup from "./components/Setup";
 import Admin from "./components/Admin";
